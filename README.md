@@ -1,35 +1,39 @@
 # 📦 Inventory Reorder System
 
-A console-based Inventory Reorder System developed using **C++** and **Data Structures & Algorithms (DSA)** concepts.  
-This project helps manage inventory efficiently by tracking stock levels, sorting products, searching products, and generating reorder lists.
+A console-based **Inventory Reorder System** developed using **C++** and **Data Structures & Algorithms (DSA)** concepts.  
+This project helps businesses and stores manage inventory efficiently by tracking stock levels, identifying low-stock products, sorting inventory data, and generating reorder reports.
 
 ---
 
 ## 📌 Project Overview
 
-The system stores product information such as:
+The system manages product information including:
+
 - Product ID
 - Product Name
-- Category
+- Product Category
 - Stock Quantity
 - Reorder Level
 - Product Price
 
-It allows users to manage products and identify low-stock items that need restocking.
+It provides multiple inventory management operations such as searching, sorting, benchmarking, and category-wise product analysis.
 
 ---
 
 ## ✨ Features
 
-- Display all products
-- Add new products
-- View low stock products
-- Generate reorder list
+- Display all inventory products
+- Add new products dynamically
+- Detect low-stock products
+- Generate reorder list automatically
 - Sort products by stock quantity
 - Sort products by price
 - Search products using Binary Search
 - Benchmark Linear Search vs Binary Search
 - Display category-wise products
+- Generate inventory comparison reports
+- Input validation for invalid entries
+- Professional console-based UI formatting
 
 ---
 
@@ -40,25 +44,26 @@ It allows users to manage products and identify low-stock items that need restoc
 - Structures
 - Functions
 - Chrono Library
+- iomanip Library
 
 ---
 
 ## 🧠 DSA Concepts Used
 
 ### 📍 Selection Sort
-Used to sort products based on stock quantity.
+Used to sort products according to stock quantity.
 
 ### 📍 Quick Sort
-Used to sort products based on product price.
+Used for efficient sorting of products based on price.
 
 ### 📍 Binary Search
-Used for fast product searching by Product ID.
+Used for fast searching of products by Product ID.
 
 ### 📍 Linear Search
-Used for performance comparison.
+Used for performance benchmarking comparison.
 
 ### 📍 Vector
-Used for dynamic product storage.
+Used for dynamic storage and management of products.
 
 ---
 
@@ -68,8 +73,8 @@ Used for dynamic product storage.
 Inventory-Reorder-System/
 │
 ├── inventory_reorder_system.cpp
-├── inventory-reorder-system_Report.pdf
-└── README.md
+├── README.md
+└── inventory_report.pdf
 ```
 
 ---
@@ -88,7 +93,8 @@ Inventory-Reorder-System/
 | 8 | Reorder List |
 | 9 | Show Electronics Products |
 | 10 | Show Stationery Products |
-| 11 | Exit |
+| 11 | Comparison Report |
+| 12 | Exit |
 
 ---
 
@@ -96,41 +102,65 @@ Inventory-Reorder-System/
 
 | Algorithm | Purpose | Time Complexity |
 |-----------|----------|----------------|
-| Selection Sort | Sort by stock | O(n²) |
+| Selection Sort | Sort by stock quantity | O(n²) |
 | Quick Sort | Sort by price | O(n log n) |
-| Binary Search | Search product | O(log n) |
+| Binary Search | Search products | O(log n) |
 | Linear Search | Benchmark comparison | O(n) |
+
+---
+
+## 📊 Functional Modules
+
+### 🔹 Product Management
+Allows users to add and display products with proper formatting.
+
+### 🔹 Inventory Monitoring
+Detects products that are below reorder level.
+
+### 🔹 Sorting System
+Provides stock-wise and price-wise sorting using DSA algorithms.
+
+### 🔹 Searching System
+Uses Binary Search for efficient product searching.
+
+### 🔹 Benchmark Analysis
+Compares Linear Search and Binary Search performance using nanoseconds.
+
+### 🔹 Report Generation
+Displays reorder reports and inventory comparison analysis.
 
 ---
 
 ## ✅ Advantages
 
-- Simple and easy to use
-- Efficient inventory management
-- Fast searching using Binary Search
-- Practical implementation of DSA concepts
-- Organized product handling
+- Easy to understand and use
+- Efficient inventory tracking
+- Fast product searching
+- Practical DSA implementation
+- Organized inventory handling
+- Real-world problem-solving approach
 
 ---
 
 ## ❌ Limitations
 
-- No permanent data storage
+- No permanent file storage
 - No database connectivity
 - Console-based interface only
-- No update/delete functionality
-- No user authentication
+- No update/delete product feature
+- No authentication system
 
 ---
 
 ## 🚀 Future Scope
 
-- Add file handling
-- Add database integration
-- Build graphical user interface (GUI)
-- Add update and delete product options
-- Generate reports automatically
-- Add admin login system
+- Add file handling support
+- Integrate database systems
+- Develop GUI version
+- Add update and delete operations
+- Export reports to PDF/Excel
+- Add admin login and authentication
+- Implement barcode scanning support
 
 ---
 
@@ -141,6 +171,7 @@ Inventory-Reorder-System/
 | Add Product | Product added successfully |
 | Search Product | Correct product displayed |
 | Sort by Price | Products sorted correctly |
+| Sort by Stock | Products sorted correctly |
 | Low Stock Check | Low stock products displayed |
 | Invalid Input | Error message displayed |
 
@@ -166,7 +197,7 @@ clang++ inventory_reorder_system.cpp -o inventory_reorder_system
 
 ```text
 ========================================
-       INVENTORY REORDER SYSTEM
+        INVENTORY REORDER SYSTEM
 ========================================
 
 1. Display All Products
@@ -179,30 +210,56 @@ clang++ inventory_reorder_system.cpp -o inventory_reorder_system
 8. Reorder List
 9. Show Electronics Products
 10. Show Stationery Products
-11. Exit
+11. Comparison Report
+12. Exit
 ```
+
+---
+
+## 📈 Sample Reports Generated
+
+- Low Stock Products Report
+- Reorder List Report
+- Inventory Comparison Report
+- Search Benchmark Report
+- Category-wise Product Report
 
 ---
 
 ## 📌 Conclusion
 
-The Inventory Reorder System is a simple and effective C++ project that demonstrates the practical implementation of Data Structures and Algorithms.  
-It improves understanding of sorting, searching, vectors, structures, and performance analysis techniques used in real-world applications.
+The **Inventory Reorder System** demonstrates the practical implementation of **Data Structures and Algorithms** in solving real-world inventory management problems.
+
+The project improves understanding of:
+- Sorting Algorithms
+- Searching Algorithms
+- Vectors and Structures
+- Time Complexity
+- Inventory Analysis
+- Console Application Development
+
+It combines efficient product management with DSA concepts to build a structured and user-friendly inventory system.
 
 ---
 
 ## 📚 References
 
 - C++ Documentation
+- STL Vector Library
+- Chrono Library Documentation
 - Data Structures and Algorithms Concepts
-- Chrono Library in C++
-- OpenAI ChatGPT for project guidance and documentation support
+- OpenAI ChatGPT for guidance and documentation support
+
+---
+
+## 👩‍💻 Author
+
+**Sanika Kangane**
 
 ---
 
 ## 🚀 Final Note
 
-This project reflects the practical use of **Data Structures and Algorithms** in solving real-world inventory management problems using **C++**.  
-It combines sorting, searching, and inventory tracking concepts into a simple and efficient system.
+This project reflects the practical application of **C++ programming** and **DSA concepts** in developing an efficient Inventory Management System.
 
-The Inventory Reorder System not only improves product management efficiency but also strengthens understanding of core programming and DSA concepts through hands-on implementation.
+It demonstrates how sorting, searching, benchmarking, and stock management techniques can be combined to create a real-world inventory solution with optimized performance and organized data handling.
